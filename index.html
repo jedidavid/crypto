@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Encryptor and Decryptor</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/icon.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header clearfix">
+            <h3 class="text-muted">Cryptography</h3>
+        </div>
+        <div class="jumbotron">
+            <h2>Encrypt and Decrypt</h2>
+            <form id="myForm">
+                <div class="form group">
+                    <div class="form group">
+                        <select class="form-control" name="selectedalgo" id="sltAlgo">
+                        <option value="">Choose Algorithm</option>
+                        <option value="AES">Advance Encryption Standard</option>
+                        <option value="TDES">Triple Data Encryption Standard</option>
+                        <option value="RABBIT">Rabbit</option>
+                      </select>
+                        <br>
+                        <label>Text :</label>
+                        <input id="dataTxt" type="text" class="form-control" placeholder="Enter Text" />
+                        <label>Secret Key :</label>
+                        <input id="secretTxt" type="text" class="form-control" placeholder="Enter Security Key" />
+                    </div>
+                    <div class="form group">
+                        <br>
+                        <p style="text-align:left; font-size: 18px;">Encrypted Data:</p>
+                        <textarea id="encryptedTxt" style="font-size: 14px; text-align:left;" class="form-control" rows="4" cols="50" readonly="true"></textarea>
+                        <br>
+                        <p style="text-align:left; font-size: 18px;">Decrypted Data:</p>
+                        <textarea id="decryptedTxt" style="font-size: 14px; text-align:left;" class="form-control" rows="4" cols="50" readonly="true"></textarea>
+                        <br>
+                        <input id="encryptBtn" type="button" value="Encrypt" class="btn btn-primary" />
+                        <input id="decryptBtn" type="button" value="Decrypt" class="btn btn-primary" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <footer class="footer">
+            <p>&copy; Jeremy Dayniel David CS-302</p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="js/aes.js" charset="utf-8"></script>
+    <script src="js/jquery-2.1.1.min.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+    <script src="js/rabbit.js" charset="utf-8"></script>
+    <script src="js/tripledes.js" charset="utf-8"></script>
+</body>
+
+</html>
